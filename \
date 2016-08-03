@@ -1,0 +1,13 @@
+medicine explanation popup
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   app/assets/javascripts/medicines.js.coffee
+#	modified:   app/assets/stylesheets/application.scss
+#	modified:   app/assets/stylesheets/medicines.scss
+#	modified:   app/assets/stylesheets/patients.scss
+#	modified:   app/views/medicines/list.html.erb
+#
