@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree
+ */
+
+@import "bootstrap";
+
+h4 {
+  margin-bottom: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  background: #888 !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: 500;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-weak {
+  color: #aaa;
+}
+
+.container {
+  text-align: center;
+  padding: 10%;
+}
+
+.progress {
+  width: 100%;
+  height: 8px;
+}
+.progress[value]::-webkit-progress-value { background: black; }
+.progress[value]::-moz-progress-bar { background: black; }
+
+
+.bottom_container {
+  //position: fixed;
+  //margin-bottom: 32px;
+  margin-top: 48px;
+}
+
+.button_bottom {
+  position: relative;
+  text-align: center;
+  background: black;
+  height: 44px;
+  border-radius: 8px;
+
+  a {
+    display: block;
+    position: absolute;
+    width :100%;
+    height: 100%;
+    line-height: 14px;
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.button_bottom a:hover {
+  @extend .button_bottom;
+  background: #333;
+}
+
+.button_bottom_white {
+  @extend .button_bottom;
+
+  background: white;
+  border: solid 1px black;
+
+  a {
+    color: black;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="top_container">
+    <%= image_tag(asset_path("img1.png"), :class => "image_agreement_1") %>
+    <h3><%= t("Before we begin") + "..." %></h3>
+  </div>
+
+  <div class="middle_container">
+    <p><%= t("This app will help you find common medications for your symptoms_ We will also try to help you convey your symptoms to a healthcare professional_") %></p>
+    <p><%= t("However_ please note we are not providing an expert medical advice_ Please contact medical providers for specific questions_") %></p>
+  </div>
+
+  <div class="bottom_container">
+    <div class="button_bottom"><%= link_to(t("Accept & Begin"), select_symptoms_path) %></div>
+  </div>
+</div>

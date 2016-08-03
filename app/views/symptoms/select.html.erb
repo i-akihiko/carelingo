@@ -1,0 +1,56 @@
+<div class="container">
+  <%= render partial: "layouts/progress", locals: {value: 0} %>
+  <p id="notice"><%= notice %></p>
+
+  <div class="symptom_top_container">
+    <form>
+      <div class="symptoms_select-language">
+        <div class="form-group form-group_language">
+          <select id="selection_language" class="form-inline form_language">
+            <option value="-1">- <%= t("Language") %> -</option>
+            <% for l in @languages %>
+                <option value="<%= l.locale %>"><%= t(l.name) %>
+            <% end %>
+          </select>
+          <span class="caret_language"></span>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class="symptoms_select-location">
+        <div class="form-group form-group_location">
+          <select id="selection_location" class="form-inline form_location">
+            <option value="-1">- <%= t("Location") %> -</option>
+            <% for l in @locations %>
+                <option value="<%= l.id %>"><%= t(l.name) %>
+            <% end %>
+          </select>
+          <span class="caret_location"></span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="symptom_middle_container">
+    <h3><%= t("I have…") %></h3>
+    <%= image_tag(asset_path("img2.png"), :class => "image_agreement_2") %>
+  </div>
+
+  <br>
+  <form>
+    <div class="form-group">
+      <select id="selection_symptom" class="form-control design-select-box">
+        <option value="-1">- <%= t("Choose symptoms") %> -</option>
+        <% for s in @symptoms %>
+            <option value="<%= s.id %>"><%= t(s.name) %>
+        <% end %>
+      </select>
+    </div>
+    <br>
+
+    <div class="bottom_container">
+      <div class="button_bottom symptom_button_bottom disabled"><a><%= t("Next") %></a></div>
+    </div>
+  </form>
+</div>

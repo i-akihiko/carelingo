@@ -1,0 +1,84 @@
+// Place all the styles related to the symptoms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.symptom_top_container {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.symptom_middle_container {
+  margin-top: 48px;
+}
+
+.symptoms_select-language {
+  float: left;
+  width: 45%;
+  left: 0;
+}
+
+.symptoms_select-location {
+  position: absolute;
+  float: left;
+  width: 45%;
+  right: 0;
+}
+
+.form-group_language {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  //padding-left: 26px;
+  //margin-left: -26px;
+}
+
+.form-group_location {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  //padding-right: 26px;
+  //margin-right: -26px;
+}
+
+.form_language {
+  padding-right: 0px;
+  text-align: right;
+  width: 100%;
+  color: #999;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border-bottom: solid black 1px;
+}
+
+.form_location {
+  @extend .form_language;
+}
+
+.caret_language {
+  position: absolute;
+  right: 0px;
+  margin-top: -24px;
+  width: 24px;
+  height: 24px;
+  background: image_url("caret.png") no-repeat;
+  pointer-events: none;
+}
+
+.caret_location {
+  @extend .caret_language;
+  position: absolute;
+}
+
+.esb-item:first-child {
+  color: #999 !important;
+}
+
+.easy-select-box {
+  border-bottom: solid black 1px;
+}
+

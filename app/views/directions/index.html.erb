@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Directions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Over 12</th>
+      <th>Over 6</th>
+      <th>Under 6</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @directions.each do |direction| %>
+      <tr>
+        <td><%= direction.over_12 %></td>
+        <td><%= direction.over_6 %></td>
+        <td><%= direction.under_6 %></td>
+        <td><%= link_to 'Show', direction %></td>
+        <td><%= link_to 'Edit', edit_direction_path(direction) %></td>
+        <td><%= link_to 'Destroy', direction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Direction', new_direction_path %>

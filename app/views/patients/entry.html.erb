@@ -1,0 +1,72 @@
+
+<div class="container">
+  <%= render partial: "layouts/progress", locals: {value: 1} %>
+
+  <p id="notice"><%= notice %></p>
+
+  <div class="top_message">
+    <p><%= t("Oh no_ you have a headache! Don't worry_ we can help you_ Tell us a little bit more_") %></p>
+  </div>
+
+  <%= form_for @patient, html: { class: "patient_form" } do |f| %>
+      <div class="hood_selection_entry">
+        <span class="top_selection_label"><%= t("I am…") %></span>
+        <span class="top_selection_value">
+          <a class="child hood_selected"><%= t("A Child") %></a>
+          <a class="adult"><%= t("An Adult") %></a>
+        </span>
+      </div>
+      <br>
+      <div class="age_selection_entry">
+        <span class="top_selection_label"><%= t("I am also…") %>.</span>
+        <span class="top_selection_value">
+          <input class="patient_input_age" type="number" min="0" max="12" value="12">
+          <%= t("years old") %>
+        </span>
+      </div>
+      <br>
+
+      <hr>
+
+      <span class="top_selection_label"><%= t("I feel like…(Check all that apply)") %></span>
+
+      <br>
+      <ul class="list patient_entry_selection">
+      <% for sd in @symptom_details %>
+            <li>
+              <label>
+                <%= check_box 'condition', 'condition', {:id => sd.id} %>
+                <%= t(sd.name) %>
+              </label>
+            </li>
+        <% end %>
+      </ul>
+
+      <hr>
+
+      <span class="top_selection_label"><%= t("On a scale of 1-10_ 1 being very mild and 10 being most painful_ my pain is…") %></span>
+      <br>
+      <p class="pain_value">5</p>
+      <div class="pain_slider_container">
+        <% 1.upto(8) do |i| %>
+            <div class="pain_slider_border_<%= i %>"></div>
+        <% end %>
+        <%= f.range_field :pain, min: 1, max: 10, value: 5, class: "pain_slider" %>
+      </div>
+      <div class="pain_word_conatiner">
+        <div class="pain_word"><%= t("Mild") %></div>
+        <div class="pain_word"><%= t("Moderate") %></div>
+        <div class="pain_word"><%= t("Major") %><%# FIXME: give translation %></div>
+        <div class="pain_word"><%= t("Severe") %></div>
+      </div>
+
+      <div class="warning_entry">
+        <span class="bold">Warning: </span>
+        If your pain is severe, an over-the-counter medicines we suggest may not be enough for you. Please consult a doctor or medical expert for an accurate treatment.
+      </div>
+
+      <div class="bottom_container_entry">
+        <div class="button_bottom patient_entry_button_bottom"><a><%= t("Next") %></a></div>
+      </div>
+  <% end %>
+</div>

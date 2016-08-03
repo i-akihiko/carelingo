@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Over 12:</strong>
+  <%= @direction.over_12 %>
+</p>
+
+<p>
+  <strong>Over 6:</strong>
+  <%= @direction.over_6 %>
+</p>
+
+<p>
+  <strong>Under 6:</strong>
+  <%= @direction.under_6 %>
+</p>
+
+<%= link_to 'Edit', edit_direction_path(@direction) %> |
+<%= link_to 'Back', directions_path %>

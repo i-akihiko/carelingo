@@ -1,0 +1,42 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top_container {
+  //float: left;
+  //width: 100%;
+  height: 240px;
+}
+
+.middle_container {
+  //float: left;
+  //width: 100%;
+  padding: 0 8px;
+}
+
+.image_agreement_1 {
+  margin: 24px;
+  max-width: 120px;
+  height: auto;
+}
+
+.image_agreement_2 {
+  margin: 24px;
+  max-width: 200px;
+  height: 0; // animated with js
+
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  -moz-transition-property: height;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-delay: 0s;
+  -o-transition-property: height;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-in-out;
+  -o-transition-delay: 0s;
+}
+
+

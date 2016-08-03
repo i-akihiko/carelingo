@@ -1,0 +1,211 @@
+// Place all the styles related to the patients controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top_message {
+  margin: 32px;
+}
+
+.top_selection_label {
+  float: left;
+  font-weight: bold;
+}
+
+.top_selection_value {
+  float: right;
+  :hover {
+    background: #eee;
+  }
+}
+
+.patient_form {
+  .child {
+    margin-right: 8px;
+    color: #aaa;
+  }
+
+  .adult {
+    color: #aaa;
+  }
+
+  input[type="number"] {
+    width: 46px;
+    text-align: right;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #ddd;
+  }
+}
+
+//.age_selection_entry {
+//  display: none;
+//}
+
+.hood_selected {
+  color: black !important;
+}
+
+.list {
+  overflow: auto;
+  max-height: 160px;
+  text-align: left;
+  list-style: none;
+  padding-top: 12px;
+  padding-left: 2px;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  border-color: #ddd;
+}
+
+
+.pain_value {
+  margin-top: 8px;
+  margin-bottom: -2px;
+  color: #666;
+}
+
+.pain_slider_container {
+  position: relative;
+  height: 26px;
+}
+
+.pain_slider_border_1 {
+  z-index: 1;
+  position: absolute;
+  width: 2px;
+  left: 12.1%;
+  height: 10px;
+  top: 8px;
+  background: #888;
+}
+
+.pain_slider_border_2 {
+  @extend .pain_slider_border_1;
+  left: 22.9%;
+}
+
+.pain_slider_border_3 {
+  @extend .pain_slider_border_1;
+  left: 33.7%;
+}
+
+.pain_slider_border_4 {
+  @extend .pain_slider_border_1;
+  left: 44.5%;
+}
+
+.pain_slider_border_5 {
+  @extend .pain_slider_border_1;
+  left: 55.3%;
+}
+
+.pain_slider_border_6 {
+  @extend .pain_slider_border_1;
+  left: 66.0%;
+}
+
+.pain_slider_border_7 {
+  @extend .pain_slider_border_1;
+  left: 76.8%;
+}
+
+.pain_slider_border_8 {
+  @extend .pain_slider_border_1;
+  left: 87.5%;
+}
+
+.pain_slider {
+  width: 100%;
+}
+
+.pain_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border:0;
+  height: 10px;
+  margin:3px 0;
+  border: solid 1px black;
+  border-radius: 5px;
+  //box-shadow:1px 1px 0px #666 inset;
+}
+
+.pain_slider::-webkit-slider-thumb {
+  z-index: 2;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: black;
+  text-align:center;
+  width: 20px;
+  height: 20px;
+  border:1px solid transparent;
+  border-radius:20px;
+  cursor:pointer;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.pain_slider::-webkit-slider-thumb:before {
+  content:"";
+  display:inline-block;
+  background-color: #333;
+  width: 16px;
+  height: 16px;
+  border:1px solid transparent;
+  border-radius:10px;
+  margin-bottom: 1px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.pain_slider::-webkit-slider-thumb:hover {
+  background-color: #777;
+}
+
+.pain_slider:active::-webkit-slider-thumb {
+  background-color: #66c;
+}
+
+.pain_slider:active::-webkit-slider-thumb:before {
+  background-color: #339;
+}
+
+.pain_slider:focus {
+  outline:none;
+}
+
+.pain_word_conatiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4px;
+  color: #666;
+
+  .pain_word {
+    display: block;
+  }
+}
+
+
+.warning_entry {
+  float: left;
+  display: none;
+  margin: 32px 0;
+  padding: 8px;
+  width: 100%;
+  background: #555;
+  color: white;
+}
+
+.bottom_container_entry {
+  clear: both;
+  margin: 64px 0;
+}
+
+
+
+

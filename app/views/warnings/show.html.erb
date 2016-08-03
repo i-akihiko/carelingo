@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Caution:</strong>
+  <%= @warning.caution %>
+</p>
+
+<p>
+  <strong>Liver warning:</strong>
+  <%= @warning.liver_warning %>
+</p>
+
+<p>
+  <strong>Pregnancy warning:</strong>
+  <%= @warning.pregnancy_warning %>
+</p>
+
+<%= link_to 'Edit', edit_warning_path(@warning) %> |
+<%= link_to 'Back', warnings_path %>

@@ -1,0 +1,29 @@
+<%= form_for(@warning) do |f| %>
+  <% if @warning.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@warning.errors.count, "error") %> prohibited this warning from being saved:</h2>
+
+      <ul>
+      <% @warning.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :caution %><br>
+    <%= f.text_field :caution %>
+  </div>
+  <div class="field">
+    <%= f.label :liver_warning %><br>
+    <%= f.text_field :liver_warning %>
+  </div>
+  <div class="field">
+    <%= f.label :pregnancy_warning %><br>
+    <%= f.text_field :pregnancy_warning %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

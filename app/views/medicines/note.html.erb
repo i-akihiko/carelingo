@@ -1,0 +1,49 @@
+<div class="container">
+  <%= render partial: "layouts/progress", locals: {value: 3} %>
+
+  <div class="top_message top_message_note">
+    <% medicine_name_1 = "Tylenol Cold & Flu." %>
+    <p><%= t("You chose") %> <span class="bold"><%= t(medicine_name_1) %></span></p>
+    <p><%= t("Here are pharmacies near your location") %></p>
+  </div>
+
+  <div id="map">
+    <% location_name = Location.last.name %>
+    <iframe width="320" height="240" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/search?q=<%= location_name %>%20pharmacy&key=<%= Rails.application.secrets.google_maps_key %>"
+            allowfullscreen></iframe>
+  </div>
+
+  <div class="middle_message">
+    <p class="bold"><%= t("Please show the following note to the doctor_pharmacist for further assistance_") %></p>
+  </div>
+
+  <div class="note_english">
+    <% I18n.locale = :en %>
+    <% symptom_detail_name_1 = "unilateral, throbbing pain" %>
+    <% symptom_detail_name_2 = "sensitivity to light/sound" %>
+    <p><%= t("Hello_ I have") %> <span class="bold"><%= t("a_") %> <%= t("Headache") %></span><%= t("_") %> <%= t("I need medicine appropriate for an adult_") %><%= t("_") %> <%= t("My symptoms are") %> <span class="bold"><%= t(symptom_detail_name_1) %></span>, <%= t("and") %> <span class="bold"><%= t(symptom_detail_name_2) %></span><%= t("_") %> <%= t("On a scale of 1-10_ 1 being very mild and 10 being most painful_ my pain is") %> <span class="bold">9</span><%= t("_") %></p>
+    <br>
+    <% medicine_name_4 = "Tylenol Regular Strength" %>
+    <p><%= t(medicine_name_4) %> <%= t("is supposed to treat some symptoms I have_ Can you show me where I can purchase it_ or point me to better medicines that you might suggest based on my symptoms?") %></p>
+  </div>
+  <div class="note_my_language hidden">
+    <% I18n.locale = @locale %>
+    <% symptom_detail_name_1 = "unilateral, throbbing pain" %>
+    <% symptom_detail_name_2 = "sensitivity to light/sound" %>
+    <p><%= t("Hello_ I have") %> <span class="bold"><%= t("a_") %> <%= t("Headache") %></span><%= t("_") %> <%= t("I need medicine appropriate for an adult_") %><%= t("_") %> <%= t("My symptoms are") %> <span class="bold"><%= t(symptom_detail_name_1) %></span>, <%= t("and") %> <span class="bold"><%= t(symptom_detail_name_2) %></span><%= t("_") %> <%= t("On a scale of 1-10_ 1 being very mild and 10 being most painful_ my pain is") %> <span class="bold">9</span><%= t("_") %></p>
+    <br>
+    <% medicine_name_4 = "Tylenol Regular Strength" %>
+    <p><%= t(medicine_name_4) %> <%= t("is supposed to treat some symptoms I have_ Can you show me where I can purchase it_ or point me to better medicines that you might suggest based on my symptoms?") %></p>
+  </div>
+
+  <div>
+    <% if @locale == "en" %>
+        <%# Should be visible? %>
+        <button class="show_note show_note_disabled" language_name="<%= t(@language_name) %>" show_note_in="<%= t("Show note in this language") %>" ><%= t("Show note in this language") %> (<%= t(@language_name) %>)</button>
+    <% else %>
+        <button class="show_note" language_name="<%= t(@language_name) %>" show_note_in="<%= t("Show note in this language") %>" ><%= t("Show note in this language") %> (<%= t(@language_name) %>)</button>
+    <% end %>
+  </div>
+</div>
+

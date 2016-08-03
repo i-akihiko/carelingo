@@ -1,0 +1,223 @@
+// Place all the styles related to the medicines controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "application";
+
+.back-to-list {
+  margin-bottom: 24px;
+  font-size: 0.9em;
+
+  a {
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.top_message_note {
+  font-size: 1.2em;
+}
+
+
+.top_selection_medicines {
+  float: right;
+  width: 100%;
+}
+
+.top_selection_label_sort {
+  position: relative;
+  font-weight: bold;
+}
+
+.form-group_sort_by {
+  position: relative;
+  text-align: right;
+  padding-right: 26px;
+  margin-right: -26px;
+}
+
+.form_sort_by {
+  padding-right: 32px;
+  text-align: right;
+  color: #999;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.caret_sort_by {
+  position: absolute;
+  right: 26px;
+  //top: 50%;
+  //margin-top: -2px;
+  //border: 4px solid transparent;
+  //border-top: 6px solid #777;
+  width: 24px;
+  height: 24px;
+  background: image_url("caret.png") no-repeat;
+  pointer-events: none;
+}
+
+.list_medicine {
+  max-height: 360px !important;
+}
+
+.medicine-header {
+  position: relative;
+  z-index: 1;
+  padding: 4px;
+  padding-left: 8px;
+  margin-bottom: 12px;
+  border-radius: 2px;
+  background: #666;
+  color: white;
+}
+
+.button_question {
+  float: right;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border: solid white 1px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  .button_question_label {
+    margin-top: -1.5px;
+  }
+}
+
+.medicine-explanation {
+  display: none;
+  margin: 6px -8px;
+  padding: 8px 8px;
+  line-height: 1.7em;
+  font-weight: 200;
+  font-size: 0.8em;
+  color: #ccc;
+  border-top: solid #777 1px;
+}
+
+.table {
+  display:table;
+  vertical-align:middle;
+  cursor: pointer;
+}
+
+.table-cell {
+  display:table-cell;
+  vertical-align: top;
+  padding-left: 8px;
+  font-size:16px;
+}
+
+// normal cell
+
+.cell-medicine-image {
+  width: 104px;
+  height: 80px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cell-medicine-title {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.cell-medicine-title-sub {
+  font-size: 0.8em;
+  color: darkgray;
+}
+
+.cell-medicine-notice {
+  font-size: 0.8em;
+  color: darkgray;
+}
+
+.cell-medicine-price {
+  font-size: 0.8em;
+}
+
+// large cell
+
+.medicine-choose_table-cell {
+  cursor: auto;
+}
+
+.cell-medicine-image_large {
+  width: 224px;
+  height: 160px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cell-medicine-title_large {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.cell-medicine-title-sub_large {
+  font-size: 0.9em;
+  color: darkgray;
+}
+
+.cell-medicine-notice_large {
+  min-height: 12px;
+  font-size: 0.7em;
+  color: darkgray;
+}
+
+.cell-medicine-price_large {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.cell-medicine-size_large {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#map {
+  height: 240px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.middle_message {
+  float: left;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 1.2em;
+}
+
+.show_note {
+  @extend .button_bottom_white;
+  margin-top: 32px;
+  min-width: 300px;
+}
+
+.show_note_disabled {
+  @extend .show_note;
+  pointer-events: none;
+  background: darkgray;
+  color: white;
+  border: none;
+}

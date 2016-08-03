@@ -1,0 +1,73 @@
+<div class="container">
+  <%= render partial: "layouts/progress", locals: {value: 2} %>
+  <div class="text-align-left">
+    <div class="back-to-list"><%= link_to(t("Back to List"), list_medicines_path) %></div>
+
+    <div class="table">
+      <div class="table-cell medicine-choose_table-cell cell-medicine-image_large"><%= image_tag "debug.png" %></div>
+      <div class="table-cell medicine-choose_table-cell">
+        <div class="cell-medicine-title_large"><%= t("Tylenol") %></div>
+        <div class="cell-medicine-title-sub_large"><%= t("Tylenol") %></div>
+        <div class="cell-medicine-notice_large"></div>
+        <div class="cell-medicine-price_large">$10〜15</div>
+        <div class="cell-medicine-size_large">Size: 24EA</div>
+      </div>
+    </div>
+
+    <div class="medicine_description">
+      <h4><%= t("Description") %></h4>
+      <div class="color-weak">
+        <%= @medicine.description %>
+      </div>
+    </div>
+    <hr>
+
+    <div class="medicine_use">
+      <h4><%= t("Uses") %></h4>
+      <div class="color-weak">
+      Helps temporarily relieve:
+      <li class="color-black">Headache</li>
+      <li>Fever</li>
+      <li>Muscular aches</li>
+      <li>Backache</li>
+      <li>Minor pain of arthritis</li>
+      <li>Common cold</li>
+      <li>Toothache</li>
+      <li>Premenstrual and menstrual cramps</li>
+        </div>
+    </div>
+    <hr>
+
+    <div class="medicine_direction">
+      <h4><%= t("Directions") %></h4>
+      <div class="bolder">
+        Adults and children 12 years and over:
+        <li>Take 2 pills every 4 hours - 6 hours while you experience symptoms</li>
+        <li>XXX</li>
+        <li>YYY</li>
+        <li>XXX</li>
+      </div>
+      <div class="color-weak">
+        Children 6-11 years old
+        <li>Take 1 pill every 4 hours - 6 hours while you experience symptoms</li>
+        <li>XXX</li>
+        <li>YYY</li>
+        <li>ZZZ</li>
+        Children under 6 years old
+        <li>Ask a doctor</li>
+      </div>
+    </div>
+    <hr>
+
+    <div class="medicine_warning">
+      <h4><%= t("Warnings") %></h4>
+      DO NOT TAKE ACETAMINOPHEN IF YOU ARE ALLERGIC.
+      <p><span class="bold">Liver warning: </span><span class="color-weak">Talk a doctor before taking Tylenol if you have a liver disease or regularly use alcohol or have a history of alcoholism.</span></p>
+      <p><span class="bold">Pregnancy warning: </span><span class="color-weak">Talk to a doctor if you are pregnant before taking Tylenol</span></p>
+    </div>
+
+    <div class="bottom_container">
+      <div class="button_bottom medicine_choose_button_bottom"><a><%= t("Choose Medicine") %></a></div>
+    </div>
+  </div>
+</div>

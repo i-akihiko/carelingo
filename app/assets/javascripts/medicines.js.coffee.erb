@@ -1,0 +1,82 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+
+$(document).on "page:change", ->
+
+# list
+
+  selected_sort_by = get_url_param_with_key("sort_by")
+  if selected_sort_by == "1"
+    $(".form_sort_by").prop('selectedIndex', 1)
+  else
+    $(".form_sort_by").prop('selectedIndex', 0)
+
+  $(".form_sort_by").change ->
+# FIXME: serialize value or query with sort model object id
+    console.log this.value
+    locale = get_locale_param()
+    location.href = "/#{locale}" + "/medicines/list?sort_by=#{this.value}"
+
+  $(".medicine-list_table-cell").click ->
+    console.log parseInt($(this).find(".cell-medicine-id").text())
+    medicine_id = parseInt($(this).find(".cell-medicine-id").text())
+    locale = get_locale_param()
+    location.href = "/#{locale}" + "/medicines/#{medicine_id}/choose"
+
+  $(".button_question").click ->
+    header = $(this).parent(".medicine-header")
+    explanation = header.find(".medicine-explanation")
+    if explanation.css("display") == "none"
+      $(this).find(".button_question_label").text("x")
+      $(this).find(".button_question_label").css("margin-top", "-2.5px")
+      explanation.css("display", "block")
+      margin = -(parseInt(header.find(".medicine-explanation").css("height")))
+      header.css("margin-bottom", "#{margin}px")
+    else
+      $(this).find(".button_question_label").text("?")
+      $(this).find(".button_question_label").css("margin-top", "-1.5px")
+      explanation.css("display", "none")
+      margin = 12
+      header.css("margin-bottom", "#{margin}px")
+
+  # choose
+
+  $(".medicine_choose_button_bottom").click ->
+    path_comps = location.pathname.split("/")
+    medicine_id = path_comps[path_comps.length - 2]
+    obj = {
+      "medicine" : medicine_id
+    }
+    params = $.param(obj)
+    locale = get_locale_param_choose()
+    location.href = "/#{locale}" + "/medicines/note?" + params
+
+  # note
+
+  $(".show_note").click ->
+    if $(".note_my_language").css("display") == "none"
+      $(".note_english").css("display", "none")
+      $(".note_my_language").css("display", "block")
+      $(".show_note").text($(".show_note").attr("show_note_in") + " (English)")
+    else
+      $(".note_english").css("display", "block")
+      $(".note_my_language").css("display", "none")
+      $(".show_note").text($(".show_note").attr("show_note_in") + " (" + ($(".show_note").attr("language_name")) + ")")
+
+# Helper
+
+get_url_param_with_key = (key) ->
+  hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&')
+  for hash in hashes
+    h = hash.split('=')
+    if h[0] == key
+      return h[1]
+
+get_locale_param_choose = () ->
+  dirs = window.location.href.split("/")
+  return dirs[dirs.length - 4]
+
+get_locale_param = () ->
+  dirs = window.location.href.split("/")
+  return dirs[dirs.length - 3]
