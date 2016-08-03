@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  caution: MyString
+  liver_warning: MyString
+  pregnancy_warning: MyString
+
+two:
+  caution: MyString
+  liver_warning: MyString
+  pregnancy_warning: MyString

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  is_adult: false
+  age: 1
+  pain: 1
+
+two:
+  is_adult: false
+  age: 1
+  pain: 1

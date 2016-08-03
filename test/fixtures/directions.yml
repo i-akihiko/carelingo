@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  over_12: MyString
+  over_6: MyString
+  under_6: MyString
+
+two:
+  over_12: MyString
+  over_6: MyString
+  under_6: MyString
