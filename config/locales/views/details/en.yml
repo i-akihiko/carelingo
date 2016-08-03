@@ -1,0 +1,42 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  Oh no_ you have a headache! Don't worry_ we can help you_ Tell us a little bit more_: Oh no, you have a headache! Don't worry, we can help you. Tell us a little bit more.
+  I am…: I am…
+  A Child: A Child
+  An Adult: An Adult
+  I am also…: I am also…
+  years old: years old
+  I feel like…(Check all that apply): I feel like…(Check all that apply)
+  One side of my head hurts: One side of my head hurts
+  Both side of my head hurts: Both side of my head hurts
+  Nauseous: Nauseous
+  I feel sensitive to light and sound: I feel sensitive to light and sound
+  I have continuous pain: I have continuous pain
+  I have pulsating pain: I have pulsating pain
+  On a scale of 1-10_ 1 being very mild and 10 being most painful_ my pain is…: On a scale of 1-10, 1 being very mild and 10 being most painful, my pain is…
+  Mild: Mild
+  Moderate: Moderate
+ # Major: Major
+  Severe: Severe
+  Next: Next
+  Warning_ If your pain is severe_ an over-the-counter medicines we suggest may not be enough for you_ Please consult a doctor or  medical provider for a more accurate treatment_ Dial 911 for emergencies_: "Warning: If your pain is severe, an over-the-counter medicines we suggest may not be enough for you. Please consult a doctor or  medical provider for a more accurate treatment. Dial 911 for emergencies."

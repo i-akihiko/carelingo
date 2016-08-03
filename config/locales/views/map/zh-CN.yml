@@ -1,0 +1,36 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-CN:
+   You chose: 你选了
+   Here are pharmacies near your location: 离你最近的药店有
+   Please show the following note to the doctor_pharmacist for further assistance_: "如需要更多帮助，请将以下信息出示你的医生／药剂师："
+   Hello_ I have: 你好，我有
+   _: 。
+   a_: ""
+   I need medicine appropriate for an adult_: 我需要适合成年人的药物
+   My symptoms are: 我的病状是
+   and: 和
+   On a scale of 1-10_ 1 being very mild and 10 being most painful_ my pain is: 如果用数字1到10来形容疼痛，1为最轻，10为最严重，我的疼痛程度是。。。
+   is supposed to treat some symptoms I have_ Can you show me where I can purchase it_ or point me to better medicines that you might suggest based on my symptoms?: 药物应该可以帮到我，你可以告诉我哪里能买到吗？或者，您可以按照我的病状推荐一个疗效更好的药物吗？
+   Show note in this language: 以此语言显示
+   Save this page for later: 保存页面
+   Share this page: 分享页面

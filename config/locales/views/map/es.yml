@@ -1,0 +1,36 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+   You chose: Ud. eligió
+   Here are pharmacies near your location: Estas son las farmacias cerca de usted
+   Please show the following note to the doctor_pharmacist for further assistance_: "Demuestre la siguiente nota a su doctor/farmacéutico para más asistencia:"
+   Hello_ I have: Hola, tengo
+   _: .
+   a_: "un "
+   I need medicine appropriate for an adult_: Necesito medicina para un adulto
+   My symptoms are: Mis síntomas son
+   and: y
+   On a scale of 1-10_ 1 being very mild and 10 being most painful_ my pain is: en una escala desde 1 a 10, 1 siendo casi no dolor y 10 siendo lo peor dolor posible, mi dolor es
+   is supposed to treat some symptoms I have_ Can you show me where I can purchase it_ or point me to better medicines that you might suggest based on my symptoms?: debe tratar unos de mis síntomas. Puede mostrarme donde puedo comprarlo? O basado en mis síntomas pudiera sugerirme otras medicinas?
+   Show note in this language: Muestre la nota en este idioma
+   Save this page for later: Guarde esta página para más tarde
+   Share this page: Comparta esta página

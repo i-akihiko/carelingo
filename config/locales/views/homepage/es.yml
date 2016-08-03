@@ -1,0 +1,42 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  Before we begin: Antes de comenzar
+  This app will help you find common medications for your symptoms_ We will also try to help you convey your symptoms to a healthcare professional_: Esta applicación puede ayudarle en su búsqueda de medicamentos comunes para sus síntomas. Tambíen trataremos de ayudarle a expresar sus síntomas a un profesional médico.
+  However_ please note we are not providing an expert medical advice_ Please contact medical providers for specific questions_: Sin embargo, por favor tenga en cuenta que no estamos proveyendo consulta médica. Por favor contacte a su médico para preguntas específicas
+  Accept & Begin: Acepto y continuo
+  Language_: "Idioma:"
+  English: English
+  Spanish: Español
+  Chinese: 简体中文
+  Location_: "Ubicación:"
+  New York: Nueva York
+  Boston: Boston
+  I have…: Tengo...
+  Choose symptoms: Elija sus síntomas
+  Next: Próximo
+  Headache: Dolor de cabeza
+  Cough: Tos
+  Sore Throat: Dolor de garganta
+  Pollen Allergies: Alergias de polen
+  Nasal Congestion: Congestión de nariz
+  Nausea: Náusea

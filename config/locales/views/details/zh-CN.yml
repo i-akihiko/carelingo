@@ -1,0 +1,42 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-CN:
+  Oh no_ you have a headache! Don't worry_ we can help you_ Tell us a little bit more_: 哦，您的头痛！别担心，我们会帮助您。请更加详细地描述一下您的症状。
+  I am…: 我是。。。
+  A Child: 儿童
+  An Adult: 成年人
+  I am also…: 我也是。。。
+  years old: 岁
+  I feel like…(Check all that apply): 我感到。。。
+  One side of my head hurts: 我头的一边疼（比如左边／右边）
+  Both side of my head hurts: 我的头两边都疼
+  Nauseous: 噁心／我有种想吐的感觉
+  I feel sensitive to light and sound: 我对光和声音敏感
+  I have continuous pain: 我有持续的疼痛
+  I have pulsating pain: 我有一阵一阵的痛
+  On a scale of 1-10_ 1 being very mild and 10 being most painful_ my pain is…: 如果用数字1到10来形容疼痛，1为最轻，10为最严重，我的疼痛程度是。。。
+  Mild: 较轻
+  Moderate: 中等
+  #Major:
+  Severe: 严重
+  Next: 下一步
+  Warning_ If your pain is severe_ an over-the-counter medicines we suggest may not be enough for you_ Please consult a doctor or  medical provider for a more accurate treatment_ Dial 911 for emergencies_: "警告：如果您感到剧烈疼痛，我们推荐的非处方药可能无法有效缓解疼痛。请咨询相关专业医护人员，以便得到更准确诊断与有效治疗。如有紧急情况，请拨打911。"

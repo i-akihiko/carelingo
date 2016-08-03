@@ -1,0 +1,35 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-CN:
+  Based on your information_ we have listed common OTC medicines for your symptoms_: 根据您的信息，我们列出了一些应对您症状的常用非处方药。
+  Sort By_: "分类:"
+  Closest Match: 最佳匹配
+  Price: 价格
+  Acetaminophen: 对乙酰氨基酚
+  Tylenol: 泰诺 (Tylenol)
+  Adult Liquid Pain Relief: Adult Liquid Pain Relief
+  Dayquil: Dayquil
+  Ibuprofen: 布洛芬 (Ibuprofen)
+  Advil: Advil
+  Motrin: Motrin
+  Aleve: Aleve
+  Acetaminophen is a pain reliever and a fever reducer_ It is one of the most common drug ingredients in America_ There are more than 600 medications that contain acetaminophen_ including over the counter (OTC) and prescription (Rx) medicines_: 对乙酰氨基酚（也称扑热息痛）是一种在美国被广泛使用的镇痛和退烧药。大约有600多种处方和非处方药品都含有对乙酰氨基酚成份。
